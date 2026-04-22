@@ -11,6 +11,7 @@ Step 3.3: Report the lowest validation loss you achieved.
 i used Remainder 2: Layers = 7, Heads ∈ {2, 3, 5, 7},max iteration 500 due to slow pc,Adjusted 384 embd slightly to ensure divisibility by 5/7 head,to produce the results
 the lowest validation loss I achieved is 1.7200,from,500 iterations,7 Layers, 7 Heads
 the code for plot is 
+
 import matplotlib.pyplot as plt
 import os
 
@@ -27,5 +28,4 @@ plt.grid(True, which='both', linestyle='--', alpha=0.5)
 os.makedirs('figures', exist_ok=True)
 plt.savefig('figures/loss_plot.png')
 plt.show()
-print("Graph saved as figures/loss_plot.png")
 <img width="859" height="552" alt="image" src="https://github.com/user-attachments/assets/947f28bf-ed25-4b45-87b2-cbf7e2c31a3c" />
